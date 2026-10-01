@@ -33,11 +33,17 @@ header{
     text-align: center;
 }
 
+section{
+    flex: 1 1 100%;
+    order: 2;
+    padding: 10px;
+}
+
 /*NAV BAR SELECTORS*/
 
 nav{
     flex: 1 1 100%;
-    order: 2;
+    order: 3;
     padding: 20px;
 }
 
@@ -48,15 +54,15 @@ nav{
     margin-top: -10px;
 }
 
-.home, .about-me, .resume{
-    color: #999999;
-}
-
-.home:hover, .about-me:hover, .resume:hover{
+.home:hover, .about-me:hover{
     color: white;
     transition: 0.2s ease-in;
     cursor: pointer;
     text-decoration: underline;
+}
+
+.home-link, .poster-link, .highlighted{
+    text-decoration: none;
 }
 
 .highlighted{
@@ -66,7 +72,7 @@ nav{
 /*MAIN BODY SELECTORS*/
 main{
     flex: 1 1 100%;
-    order: 3;
+    order: 4;
     padding: 20px;
 }
 
@@ -95,7 +101,7 @@ main{
 /*FOOTER SELECTORS*/
 footer{
     flex: 1 1 100%;
-    order: 4;
+    order: 5;
     padding: 20px;
 }
 
