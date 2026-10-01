@@ -1,0 +1,136 @@
+:root{
+    --main-background-color: #000;
+    --font-family-1:'Poppins', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: var(--font-family-1);
+    background-color: var(--main-background-color);
+    color: white;
+}
+
+header{
+    flex: 1 1 100%;
+    order: 1;
+    padding: 10px;
+}
+
+.name-header{
+    text-align: center;
+}
+
+/*NAV BAR SELECTORS*/
+
+nav{
+    flex: 1 1 100%;
+    order: 2;
+    padding: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: -10px;
+}
+
+.home, .about-me, .resume{
+    color: #999999;
+}
+
+.home:hover, .about-me:hover, .resume:hover{
+    color: white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.highlighted{
+    color: white;
+}
+
+/*MAIN BODY SELECTORS*/
+main{
+    flex: 1 1 100%;
+    order: 3;
+    padding: 20px;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .poster-1, .poster-2, .poster-3, .poster-4, .poster-5, .poster-6{
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .project-5:hover, .project-6:hover, .poster-1:hover, .poster-2:hover, .poster-3:hover, .poster-4:hover, .poster-5:hover, .poster-6:hover{
+    opacity: 0.6;
+    cursor: pointer;    
+    transition: 0.2s ease-in;
+}
+
+
+/*FOOTER SELECTORS*/
+footer{
+    flex: 1 1 100%;
+    order: 4;
+    padding: 20px;
+}
+
+hr{    
+    border: 1px solid #495057;
+}
+
+.footer-caption-text{
+    margin-top: 13px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--caption-font-color) ;
+}
+
+
+.contacts-nav-bar{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.contacts-nav-bar li,a{
+    padding: 5px;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    color: #999999;
+}
+
+
+.contacts-nav-bar a:hover{
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.fa-brands, .fa-solid{
+    margin-left: 5px;
+}
